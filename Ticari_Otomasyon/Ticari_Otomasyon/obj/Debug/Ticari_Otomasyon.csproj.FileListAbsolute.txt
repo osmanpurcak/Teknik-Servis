@@ -1,0 +1,12 @@
+c:\users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\bin\Debug\Ticari_Otomasyon.exe.config
+c:\users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\bin\Debug\Ticari_Otomasyon.exe
+c:\users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\bin\Debug\Ticari_Otomasyon.pdb
+c:\users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.csprojResolveAssemblyReference.cache
+c:\users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.Properties.Resources.resources
+c:\users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.csproj.GenerateResource.Cache
+c:\users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.exe.licenses
+c:\users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.exe
+c:\users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.pdb
+c:\users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.FrmUrunler.resources
+C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.FrmAnaModul.resources
+C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.FrmMusteriler.resources
