@@ -93,6 +93,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -106,6 +107,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\working-at-home.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-and-finance.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\furniture-and-household.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business %281%29.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money %281%29.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools-and-utensils.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electronics.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business %282%29.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business %283%29.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings %281%29.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-book.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-card.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
