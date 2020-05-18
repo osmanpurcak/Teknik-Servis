@@ -87,5 +87,33 @@ namespace Ticari_Otomasyon
         {
             temizle();
         }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            SqlCommand komutsil = new SqlCommand("delete from TBL_PERSONELLER where ID=@p1", bgl.baglanti());
+            komutsil.Parameters.AddWithValue("@p1", Txtid.Text);
+            komutsil.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Personel Listeden Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.None);
+            personelliste();
+            temizle();
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Update tbl_personeller set AD=@P1,SOYAD=@P2,TELEFON=@P3,TC=@P4,MAIL=@P5,ADRES=@P6,GOREV=@P7 WHERE ID=@P8", bgl.baglanti());
+            komut.Parameters.AddWithValue("@P1", TxtAd.Text);
+            komut.Parameters.AddWithValue("@P2", TxtSoyad.Text);
+            komut.Parameters.AddWithValue("@P3", MskTelefon.Text);
+            komut.Parameters.AddWithValue("@P4", MskTC.Text);
+            komut.Parameters.AddWithValue("@P5", TxtMail.Text);
+            komut.Parameters.AddWithValue("@P6", RchAdres.Text);
+            komut.Parameters.AddWithValue("@P7", TxtGorev.Text);
+            komut.Parameters.AddWithValue("@P8", Txtid.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Personel Bilgileri Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            personelliste();
+        }
     }
 }
