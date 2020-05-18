@@ -30,19 +30,19 @@
         {
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
+            this.xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -64,15 +64,6 @@
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
             // 
-            // gridView1
-            // 
-            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.gridView1.Appearance.Row.Options.UseBackColor = true;
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
-            // 
             // gridView2
             // 
             this.gridView2.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -81,13 +72,17 @@
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowGroupPanel = false;
+            this.gridView2.DoubleClick += new System.EventHandler(this.gridView2_DoubleClick);
             // 
-            // xtraTabPage1
+            // gridView1
             // 
-            this.xtraTabPage1.Controls.Add(this.gridControl1);
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1368, 536);
-            this.xtraTabPage1.Text = "Müşteriler";
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // gridControl1
             // 
@@ -97,12 +92,20 @@
             this.gridControl1.Size = new System.Drawing.Size(1359, 547);
             this.gridControl1.TabIndex = 59;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gridView1,
+            this.gridView3});
             // 
             // gridView3
             // 
             this.gridView3.GridControl = this.gridControl1;
             this.gridView3.Name = "gridView3";
+            // 
+            // xtraTabPage1
+            // 
+            this.xtraTabPage1.Controls.Add(this.gridControl1);
+            this.xtraTabPage1.Name = "xtraTabPage1";
+            this.xtraTabPage1.Size = new System.Drawing.Size(1368, 536);
+            this.xtraTabPage1.Text = "Müşteriler";
             // 
             // xtraTabControl1
             // 
@@ -127,11 +130,11 @@
             this.Load += new System.EventHandler(this.FrmRehber_Load);
             this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            this.xtraTabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
+            this.xtraTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
