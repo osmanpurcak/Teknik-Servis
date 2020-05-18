@@ -241,6 +241,16 @@ namespace Ticari_Otomasyon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ozel_mail_adresi_alma_1574240436 {
+            get {
+                object obj = ResourceManager.GetObject("ozel-mail-adresi-alma-1574240436", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage phone_book {
