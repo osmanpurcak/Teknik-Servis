@@ -27,11 +27,27 @@ namespace Ticari_Otomasyon
             gridControl1.DataSource = dt;
         }
 
+        void temizle()
+        {
+            Txtid.Text = "";
+            TxtAd.Text = "";
+            TxtSoyad.Text = "";
+            MskTelefon.Text = "";
+            MskTC.Text = "";
+            TxtMail.Text = "";
+            TxtGorev.Text = "";
+            RchAdres.Text = "";
+            // "bu kısımı menüyü açınca veya yeni veri ekledikten sonra bölümleri temizlesin diye ekledim"
+        }
+
 
 
         private void FrmPersonel_Load(object sender, EventArgs e)
         {
             personelliste();
+
+            temizle();
+            // "form yüklendiğinde temiz gelsin istedim"
         }
 
         private void BtnKaydet_Click(object sender, EventArgs e)
@@ -48,6 +64,28 @@ namespace Ticari_Otomasyon
             bgl.baglanti().Close();
             MessageBox.Show("Personel Bilgileri Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             personelliste();
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+
+            if (dr != null)
+            {
+                Txtid.Text = dr["ID"].ToString();
+                TxtAd.Text = dr["AD"].ToString();
+                TxtSoyad.Text = dr["SOYAD"].ToString();
+                MskTelefon.Text = dr["TELEFON"].ToString();
+                MskTC.Text = dr["TC"].ToString();
+                TxtMail.Text = dr["MAIL"].ToString();
+                RchAdres.Text = dr["ADRES"].ToString();
+                TxtGorev.Text = dr["GOREV"].ToString();
+            }
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            temizle();
         }
     }
 }
