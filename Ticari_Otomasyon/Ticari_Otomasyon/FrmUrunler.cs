@@ -101,7 +101,7 @@ namespace Ticari_Otomasyon
             komut.Parameters.AddWithValue("@p6", decimal.Parse(TxtAlis.Text));
             komut.Parameters.AddWithValue("@p7", decimal.Parse(TxtSatis.Text));
             komut.Parameters.AddWithValue("@p8", RchDetay.Text);
-            komut.Parameters.Add("@p9", Txtid.Text);
+            komut.Parameters.AddWithValue("@p9", Txtid.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Ürün Bilgisi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);

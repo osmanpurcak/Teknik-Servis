@@ -34,7 +34,6 @@
             this.BtnAnaSayfa = new DevExpress.XtraBars.BarButtonItem();
             this.BtnUrunler = new DevExpress.XtraBars.BarButtonItem();
             this.BtnStoklar = new DevExpress.XtraBars.BarButtonItem();
-            this.BtnMusteriler = new DevExpress.XtraBars.BarButtonItem();
             this.BtnFirmalar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnPersoneller = new DevExpress.XtraBars.BarButtonItem();
             this.BtnGiderler = new DevExpress.XtraBars.BarButtonItem();
@@ -70,7 +69,6 @@
             this.BtnAnaSayfa,
             this.BtnUrunler,
             this.BtnStoklar,
-            this.BtnMusteriler,
             this.BtnFirmalar,
             this.BtnPersoneller,
             this.BtnGiderler,
@@ -91,7 +89,7 @@
             this.barButtonItem9,
             this.barButtonItem10});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 24;
+            this.ribbonControl1.MaxItemId = 25;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -124,15 +122,6 @@
             this.BtnStoklar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnStoklar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnStoklar.Name = "BtnStoklar";
-            // 
-            // BtnMusteriler
-            // 
-            this.BtnMusteriler.Caption = "MÜŞTERİLER";
-            this.BtnMusteriler.Id = 4;
-            this.BtnMusteriler.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnMusteriler.ImageOptions.SvgImage")));
-            this.BtnMusteriler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnMusteriler.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnMusteriler.Name = "BtnMusteriler";
             // 
             // BtnFirmalar
             // 
@@ -218,13 +207,8 @@
             // 
             // barButtonItem1
             // 
-            this.barButtonItem1.Caption = " MÜŞTERİLER        ";
-            this.barButtonItem1.Id = 14;
-            this.barButtonItem1.ImageOptions.SvgImage = global::Ticari_Otomasyon.Properties.Resources.network;
-            this.barButtonItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem1.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem1.Id = 24;
             this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -252,6 +236,7 @@
             this.barButtonItem4.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.barButtonItem4.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // barButtonItem5
             // 
@@ -319,7 +304,6 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnAnaSayfa);
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnUrunler);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
@@ -360,7 +344,6 @@
         private DevExpress.XtraBars.BarButtonItem BtnAnaSayfa;
         private DevExpress.XtraBars.BarButtonItem BtnUrunler;
         private DevExpress.XtraBars.BarButtonItem BtnStoklar;
-        private DevExpress.XtraBars.BarButtonItem BtnMusteriler;
         private DevExpress.XtraBars.BarButtonItem BtnFirmalar;
         private DevExpress.XtraBars.BarButtonItem BtnPersoneller;
         private DevExpress.XtraBars.BarButtonItem BtnGiderler;

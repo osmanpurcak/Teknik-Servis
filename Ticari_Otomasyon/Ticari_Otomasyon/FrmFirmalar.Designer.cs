@@ -34,12 +34,8 @@
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.TxtVergi = new DevExpress.XtraEditors.TextEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.Cmbilce = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.Cmbil = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtSektör = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSektor = new DevExpress.XtraEditors.TextEdit();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
             this.TxtAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
@@ -67,6 +63,7 @@
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -89,9 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmbilce.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmbil.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSektör.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSektor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Txtid.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -139,10 +134,11 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // RchAdres
             // 
-            this.RchAdres.Location = new System.Drawing.Point(67, 97);
+            this.RchAdres.Location = new System.Drawing.Point(69, 56);
             this.RchAdres.Name = "RchAdres";
             this.RchAdres.Size = new System.Drawing.Size(160, 149);
             this.RchAdres.TabIndex = 31;
@@ -152,7 +148,7 @@
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(18, 124);
+            this.labelControl12.Location = new System.Drawing.Point(20, 83);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(42, 18);
             this.labelControl12.TabIndex = 30;
@@ -160,7 +156,7 @@
             // 
             // TxtVergi
             // 
-            this.TxtVergi.Location = new System.Drawing.Point(67, 67);
+            this.TxtVergi.Location = new System.Drawing.Point(69, 26);
             this.TxtVergi.Name = "TxtVergi";
             this.TxtVergi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtVergi.Properties.Appearance.Options.UseFont = true;
@@ -171,53 +167,11 @@
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(10, 70);
+            this.labelControl13.Location = new System.Drawing.Point(12, 29);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(52, 18);
             this.labelControl13.TabIndex = 28;
             this.labelControl13.Text = "Vergi D:";
-            // 
-            // Cmbilce
-            // 
-            this.Cmbilce.Location = new System.Drawing.Point(67, 35);
-            this.Cmbilce.Name = "Cmbilce";
-            this.Cmbilce.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Cmbilce.Properties.Appearance.Options.UseFont = true;
-            this.Cmbilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Cmbilce.Size = new System.Drawing.Size(160, 24);
-            this.Cmbilce.TabIndex = 27;
-            // 
-            // Cmbil
-            // 
-            this.Cmbil.Location = new System.Drawing.Point(67, 5);
-            this.Cmbil.Name = "Cmbil";
-            this.Cmbil.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Cmbil.Properties.Appearance.Options.UseFont = true;
-            this.Cmbil.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Cmbil.Size = new System.Drawing.Size(160, 24);
-            this.Cmbil.TabIndex = 26;
-            // 
-            // labelControl14
-            // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(33, 38);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(28, 18);
-            this.labelControl14.TabIndex = 19;
-            this.labelControl14.Text = "İlçe:";
-            // 
-            // labelControl15
-            // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Location = new System.Drawing.Point(48, 4);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(13, 18);
-            this.labelControl15.TabIndex = 15;
-            this.labelControl15.Text = "İl:";
             // 
             // labelControl17
             // 
@@ -229,14 +183,14 @@
             this.labelControl17.TabIndex = 12;
             this.labelControl17.Text = "Tc:";
             // 
-            // TxtSektör
+            // TxtSektor
             // 
-            this.TxtSektör.Location = new System.Drawing.Point(72, 92);
-            this.TxtSektör.Name = "TxtSektör";
-            this.TxtSektör.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtSektör.Properties.Appearance.Options.UseFont = true;
-            this.TxtSektör.Size = new System.Drawing.Size(160, 24);
-            this.TxtSektör.TabIndex = 7;
+            this.TxtSektor.Location = new System.Drawing.Point(72, 92);
+            this.TxtSektor.Name = "TxtSektor";
+            this.TxtSektor.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtSektor.Properties.Appearance.Options.UseFont = true;
+            this.TxtSektor.Size = new System.Drawing.Size(160, 24);
+            this.TxtSektor.TabIndex = 7;
             // 
             // labelControl20
             // 
@@ -489,7 +443,7 @@
             this.groupControl2.Controls.Add(this.labelControl22);
             this.groupControl2.Controls.Add(this.labelControl21);
             this.groupControl2.Controls.Add(this.TxtAd);
-            this.groupControl2.Controls.Add(this.TxtSektör);
+            this.groupControl2.Controls.Add(this.TxtSektor);
             this.groupControl2.Controls.Add(this.labelControl20);
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
             this.groupControl2.Name = "groupControl2";
@@ -507,17 +461,14 @@
             // 
             // groupControl5
             // 
+            this.groupControl5.Controls.Add(this.BtnTemizle);
             this.groupControl5.Controls.Add(this.BtnGuncelle);
             this.groupControl5.Controls.Add(this.BtnSil);
             this.groupControl5.Controls.Add(this.BtnKaydet);
             this.groupControl5.Controls.Add(this.RchAdres);
             this.groupControl5.Controls.Add(this.labelControl12);
-            this.groupControl5.Controls.Add(this.Cmbil);
             this.groupControl5.Controls.Add(this.TxtVergi);
-            this.groupControl5.Controls.Add(this.labelControl15);
             this.groupControl5.Controls.Add(this.labelControl13);
-            this.groupControl5.Controls.Add(this.labelControl14);
-            this.groupControl5.Controls.Add(this.Cmbilce);
             this.groupControl5.Location = new System.Drawing.Point(-1, 3);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.ShowCaption = false;
@@ -525,35 +476,49 @@
             this.groupControl5.TabIndex = 0;
             this.groupControl5.Text = "Adres Bilgileri";
             // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.Location = new System.Drawing.Point(69, 322);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(160, 31);
+            this.BtnTemizle.TabIndex = 35;
+            this.BtnTemizle.Text = "TEMİZLE";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
+            // 
             // BtnGuncelle
             // 
             this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnGuncelle.Appearance.Options.UseFont = true;
-            this.BtnGuncelle.Location = new System.Drawing.Point(67, 326);
+            this.BtnGuncelle.Location = new System.Drawing.Point(69, 285);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(160, 31);
             this.BtnGuncelle.TabIndex = 34;
             this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnSil
             // 
             this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnSil.Appearance.Options.UseFont = true;
-            this.BtnSil.Location = new System.Drawing.Point(67, 289);
+            this.BtnSil.Location = new System.Drawing.Point(69, 248);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(160, 31);
             this.BtnSil.TabIndex = 33;
             this.BtnSil.Text = "SİL";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnKaydet
             // 
             this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKaydet.Appearance.Options.UseFont = true;
-            this.BtnKaydet.Location = new System.Drawing.Point(67, 252);
+            this.BtnKaydet.Location = new System.Drawing.Point(69, 211);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(160, 31);
             this.BtnKaydet.TabIndex = 32;
             this.BtnKaydet.Text = "KAYDET";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // xtraTabPage3
             // 
@@ -714,9 +679,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmbilce.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmbil.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSektör.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSektor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Txtid.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
@@ -764,12 +727,8 @@
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.TextEdit TxtVergi;
         private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.ComboBoxEdit Cmbilce;
-        private DevExpress.XtraEditors.ComboBoxEdit Cmbil;
-        private DevExpress.XtraEditors.LabelControl labelControl14;
-        private DevExpress.XtraEditors.LabelControl labelControl15;
         private DevExpress.XtraEditors.LabelControl labelControl17;
-        private DevExpress.XtraEditors.TextEdit TxtSektör;
+        private DevExpress.XtraEditors.TextEdit TxtSektor;
         private DevExpress.XtraEditors.LabelControl labelControl20;
         private DevExpress.XtraEditors.TextEdit TxtAd;
         private DevExpress.XtraEditors.LabelControl labelControl21;
@@ -816,5 +775,6 @@
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
         private DevExpress.XtraEditors.SimpleButton BtnSil;
         private DevExpress.XtraEditors.SimpleButton BtnKaydet;
+        private DevExpress.XtraEditors.SimpleButton BtnTemizle;
     }
 }

@@ -27,17 +27,7 @@ namespace Ticari_Otomasyon
                 //fr'yi şu an çalıştığım MdiParent içerisinde açmasını istedim
             }
         }
-        FrmMusteriler fr2;
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            if (fr2==null)
-            {
-                fr2 = new FrmMusteriler();
-                fr2.MdiParent = this;
-                fr2.Show();
-                //müşteriler modülünü ekledim
-            }
-        }
+        
 
         private void BtnKasa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -51,6 +41,16 @@ namespace Ticari_Otomasyon
                 fr3 = new FrmFirmalar();
                 fr3.MdiParent = this;
                 fr3.Show();
+            }
+        }
+        FrmPersonel fr4;
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr4==null)
+            {
+                fr4 = new FrmPersonel();
+                fr4.MdiParent = this;
+                fr4.Show();
             }
         }
     }

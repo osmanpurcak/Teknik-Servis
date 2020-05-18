@@ -72,11 +72,11 @@
     <Compile Include="FrmFirmalar.Designer.cs">
       <DependentUpon>FrmFirmalar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMusteriler.cs">
+    <Compile Include="FrmPersonel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMusteriler.Designer.cs">
-      <DependentUpon>FrmMusteriler.cs</DependentUpon>
+    <Compile Include="FrmPersonel.Designer.cs">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUrunler.cs">
       <SubType>Form</SubType>
@@ -96,8 +96,8 @@
     <EmbeddedResource Include="FrmFirmalar.resx">
       <DependentUpon>FrmFirmalar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMusteriler.resx">
-      <DependentUpon>FrmMusteriler.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPersonel.resx">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUrunler.resx">
       <DependentUpon>FrmUrunler.cs</DependentUpon>
@@ -194,6 +194,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\data1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interface.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

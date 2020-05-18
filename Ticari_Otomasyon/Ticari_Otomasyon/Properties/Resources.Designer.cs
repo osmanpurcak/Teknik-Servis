@@ -63,6 +63,16 @@ namespace Ticari_Otomasyon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage _interface {
+            get {
+                object obj = ResourceManager.GetObject("interface", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage business {
             get {
                 object obj = ResourceManager.GetObject("business", resourceCulture);
