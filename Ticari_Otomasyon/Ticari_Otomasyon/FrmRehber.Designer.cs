@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRehber));
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -50,8 +51,9 @@
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.gridControl2);
+            this.xtraTabPage2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage2.ImageOptions.SvgImage")));
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1368, 536);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1368, 517);
             this.xtraTabPage2.Text = "Firmalar";
             // 
             // gridControl2
@@ -103,8 +105,9 @@
             // xtraTabPage1
             // 
             this.xtraTabPage1.Controls.Add(this.gridControl1);
+            this.xtraTabPage1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage1.ImageOptions.SvgImage")));
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1368, 536);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1368, 517);
             this.xtraTabPage1.Text = "Müşteriler";
             // 
             // xtraTabControl1

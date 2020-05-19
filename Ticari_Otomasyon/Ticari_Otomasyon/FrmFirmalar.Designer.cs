@@ -107,7 +107,6 @@
             this.groupControl5.SuspendLayout();
             this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
-            this.groupControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage4.SuspendLayout();
@@ -125,7 +124,7 @@
             this.gridControl1.Location = new System.Drawing.Point(1, 1);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1081, 557);
+            this.gridControl1.Size = new System.Drawing.Size(1027, 557);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -246,10 +245,10 @@
             // 
             // xtraTabControl1
             // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(1088, 1);
+            this.xtraTabControl1.Location = new System.Drawing.Point(1034, 1);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(270, 557);
+            this.xtraTabControl1.Size = new System.Drawing.Size(324, 557);
             this.xtraTabControl1.TabIndex = 58;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -261,8 +260,9 @@
             this.xtraTabPage1.Controls.Add(this.groupControl4);
             this.xtraTabPage1.Controls.Add(this.groupControl3);
             this.xtraTabPage1.Controls.Add(this.groupControl2);
+            this.xtraTabPage1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage1.ImageOptions.SvgImage")));
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(268, 532);
+            this.xtraTabPage1.Size = new System.Drawing.Size(322, 513);
             this.xtraTabPage1.Text = "Firma Bilgileri";
             // 
             // groupControl4
@@ -277,10 +277,10 @@
             this.groupControl4.Controls.Add(this.MskTelefon2);
             this.groupControl4.Controls.Add(this.labelControl3);
             this.groupControl4.Controls.Add(this.labelControl4);
-            this.groupControl4.Location = new System.Drawing.Point(0, 308);
+            this.groupControl4.Location = new System.Drawing.Point(0, 301);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.ShowCaption = false;
-            this.groupControl4.Size = new System.Drawing.Size(269, 186);
+            this.groupControl4.Size = new System.Drawing.Size(321, 212);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "groupControl4";
             // 
@@ -387,10 +387,10 @@
             this.groupControl3.Controls.Add(this.TxtYetkili);
             this.groupControl3.Controls.Add(this.MskYetkiliTC);
             this.groupControl3.Controls.Add(this.labelControl17);
-            this.groupControl3.Location = new System.Drawing.Point(-1, 166);
+            this.groupControl3.Location = new System.Drawing.Point(-1, 159);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.ShowCaption = false;
-            this.groupControl3.Size = new System.Drawing.Size(269, 136);
+            this.groupControl3.Size = new System.Drawing.Size(322, 143);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "groupControl3";
             // 
@@ -452,15 +452,16 @@
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.ShowCaption = false;
-            this.groupControl2.Size = new System.Drawing.Size(268, 160);
+            this.groupControl2.Size = new System.Drawing.Size(321, 160);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "groupControl2";
             // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.groupControl5);
+            this.xtraTabPage2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage2.ImageOptions.SvgImage")));
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(268, 532);
+            this.xtraTabPage2.Size = new System.Drawing.Size(322, 513);
             this.xtraTabPage2.Text = "Adres Bilgileri";
             // 
             // groupControl5
@@ -476,7 +477,7 @@
             this.groupControl5.Location = new System.Drawing.Point(-1, 3);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.ShowCaption = false;
-            this.groupControl5.Size = new System.Drawing.Size(269, 457);
+            this.groupControl5.Size = new System.Drawing.Size(322, 510);
             this.groupControl5.TabIndex = 0;
             this.groupControl5.Text = "Adres Bilgileri";
             // 
@@ -532,22 +533,22 @@
             // 
             this.xtraTabPage3.Controls.Add(this.groupControl7);
             this.xtraTabPage3.Controls.Add(this.groupControl6);
+            this.xtraTabPage3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage3.ImageOptions.SvgImage")));
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(268, 532);
+            this.xtraTabPage3.Size = new System.Drawing.Size(322, 513);
             this.xtraTabPage3.Text = "Özel Kodlar";
             // 
             // groupControl7
             // 
-            this.groupControl7.Controls.Add(this.xtraTabControl2);
-            this.groupControl7.Location = new System.Drawing.Point(-1, 121);
+            this.groupControl7.Location = new System.Drawing.Point(-1, 113);
             this.groupControl7.Name = "groupControl7";
-            this.groupControl7.Size = new System.Drawing.Size(269, 373);
+            this.groupControl7.Size = new System.Drawing.Size(322, 401);
             this.groupControl7.TabIndex = 1;
             this.groupControl7.Text = "Özel Kodlar ve Anlamları";
             // 
             // xtraTabControl2
             // 
-            this.xtraTabControl2.Location = new System.Drawing.Point(5, 30);
+            this.xtraTabControl2.Location = new System.Drawing.Point(1034, 179);
             this.xtraTabControl2.Name = "xtraTabControl2";
             this.xtraTabControl2.SelectedTabPage = this.xtraTabPage4;
             this.xtraTabControl2.Size = new System.Drawing.Size(259, 309);
@@ -583,7 +584,7 @@
             // 
             this.RchKod2.Location = new System.Drawing.Point(3, 3);
             this.RchKod2.Name = "RchKod2";
-            this.RchKod2.Size = new System.Drawing.Size(251, 278);
+            this.RchKod2.Size = new System.Drawing.Size(254, 278);
             this.RchKod2.TabIndex = 1;
             this.RchKod2.Text = "";
             // 
@@ -596,9 +597,9 @@
             // 
             // RchKod3
             // 
-            this.RchKod3.Location = new System.Drawing.Point(3, 3);
+            this.RchKod3.Location = new System.Drawing.Point(0, 0);
             this.RchKod3.Name = "RchKod3";
-            this.RchKod3.Size = new System.Drawing.Size(251, 278);
+            this.RchKod3.Size = new System.Drawing.Size(254, 285);
             this.RchKod3.TabIndex = 1;
             this.RchKod3.Text = "";
             // 
@@ -613,7 +614,7 @@
             this.groupControl6.Location = new System.Drawing.Point(-1, 3);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.ShowCaption = false;
-            this.groupControl6.Size = new System.Drawing.Size(270, 112);
+            this.groupControl6.Size = new System.Drawing.Size(322, 112);
             this.groupControl6.TabIndex = 0;
             this.groupControl6.Text = "groupControl6";
             // 
@@ -679,10 +680,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 561);
+            this.Controls.Add(this.xtraTabControl2);
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmFirmalar";
-            this.Text = "Firmalar";
+            this.Text = "FİRMALAR";
             this.Load += new System.EventHandler(this.FrmFirmalar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -711,7 +713,6 @@
             this.groupControl5.PerformLayout();
             this.xtraTabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
-            this.groupControl7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).EndInit();
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage4.ResumeLayout(false);

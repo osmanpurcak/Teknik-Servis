@@ -143,7 +143,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmMail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMail";
+            this.Text = "MAİL GÖNDERME PANELİ";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.FrmMail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TxtMailAdresi.Properties)).EndInit();
