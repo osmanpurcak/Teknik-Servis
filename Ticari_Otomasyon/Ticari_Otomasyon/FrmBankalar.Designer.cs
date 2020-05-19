@@ -228,6 +228,7 @@
             this.BtnKaydet.Size = new System.Drawing.Size(160, 31);
             this.BtnKaydet.TabIndex = 58;
             this.BtnKaydet.Text = "KAYDET";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // TxtFirma
             // 
