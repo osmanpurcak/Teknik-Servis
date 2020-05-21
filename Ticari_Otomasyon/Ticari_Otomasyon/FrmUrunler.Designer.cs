@@ -171,7 +171,7 @@
             this.RchDetay.Location = new System.Drawing.Point(83, 270);
             this.RchDetay.Name = "RchDetay";
             this.RchDetay.Size = new System.Drawing.Size(160, 96);
-            this.RchDetay.TabIndex = 20;
+            this.RchDetay.TabIndex = 8;
             this.RchDetay.Text = "";
             // 
             // labelControl10
@@ -191,7 +191,7 @@
             this.TxtSatis.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSatis.Properties.Appearance.Options.UseFont = true;
             this.TxtSatis.Size = new System.Drawing.Size(160, 24);
-            this.TxtSatis.TabIndex = 16;
+            this.TxtSatis.TabIndex = 7;
             // 
             // labelControl8
             // 
@@ -210,7 +210,7 @@
             this.TxtAlis.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtAlis.Properties.Appearance.Options.UseFont = true;
             this.TxtAlis.Size = new System.Drawing.Size(160, 24);
-            this.TxtAlis.TabIndex = 14;
+            this.TxtAlis.TabIndex = 6;
             // 
             // labelControl7
             // 
@@ -239,7 +239,7 @@
             this.MskYil.Mask = "0000";
             this.MskYil.Name = "MskYil";
             this.MskYil.Size = new System.Drawing.Size(160, 26);
-            this.MskYil.TabIndex = 11;
+            this.MskYil.TabIndex = 4;
             this.MskYil.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // labelControl5
@@ -259,7 +259,7 @@
             this.TxtModel.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtModel.Properties.Appearance.Options.UseFont = true;
             this.TxtModel.Size = new System.Drawing.Size(160, 24);
-            this.TxtModel.TabIndex = 9;
+            this.TxtModel.TabIndex = 3;
             // 
             // labelControl4
             // 
@@ -278,7 +278,7 @@
             this.TxtMarka.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMarka.Properties.Appearance.Options.UseFont = true;
             this.TxtMarka.Size = new System.Drawing.Size(160, 24);
-            this.TxtMarka.TabIndex = 7;
+            this.TxtMarka.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -297,7 +297,7 @@
             this.TxtAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtAd.Properties.Appearance.Options.UseFont = true;
             this.TxtAd.Size = new System.Drawing.Size(160, 24);
-            this.TxtAd.TabIndex = 5;
+            this.TxtAd.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -316,7 +316,7 @@
             this.Txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Txtid.Properties.Appearance.Options.UseFont = true;
             this.Txtid.Size = new System.Drawing.Size(160, 24);
-            this.Txtid.TabIndex = 3;
+            this.Txtid.TabIndex = 15;
             // 
             // NudAdet
             // 
@@ -324,7 +324,7 @@
             this.NudAdet.Location = new System.Drawing.Point(83, 178);
             this.NudAdet.Name = "NudAdet";
             this.NudAdet.Size = new System.Drawing.Size(160, 26);
-            this.NudAdet.TabIndex = 2;
+            this.NudAdet.TabIndex = 5;
             this.NudAdet.ValueChanged += new System.EventHandler(this.NudAdet_ValueChanged);
             // 
             // labelControl1

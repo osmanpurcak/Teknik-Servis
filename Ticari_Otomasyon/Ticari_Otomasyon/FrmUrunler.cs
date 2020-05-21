@@ -48,6 +48,7 @@ namespace Ticari_Otomasyon
             TxtSatis.Text = "";
             MskYil.Text = "";
             RchDetay.Text = "";
+            NudAdet.Value = 0;
         }
 
         private void FrmUrunler_Load(object sender, EventArgs e)
@@ -76,6 +77,7 @@ namespace Ticari_Otomasyon
             MessageBox.Show("Ürün sisteme eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //Ürün eklenince ekrana gelmesini istediğim bir MessageBox ekledim
             listele();
+
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
