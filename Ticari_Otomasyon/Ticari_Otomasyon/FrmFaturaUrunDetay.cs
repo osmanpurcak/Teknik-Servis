@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Ticari_Otomasyon
 {
@@ -19,9 +20,29 @@ namespace Ticari_Otomasyon
 
         // fatura id değerlerini taşımak için public bi id tanımlıyorum
         public string id;
+        sqlbaglantisi bgl = new sqlbaglantisi();
+
+        void listele()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("Select * from tbl_FaturaDetay where FaturaID='" + id + "'", bgl.baglanti());
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            gridControl1.DataSource=dt;
+        }
         private void FrmFaturaUrunDetay_Load(object sender, EventArgs e)
         {
-            label1.Text = id;
+            listele();
+        }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmFaturaUrunDuzenleme fr = new FrmFaturaUrunDuzenleme();
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr!=null)
+            {
+                fr.urunid = dr["FATURAURUNID"].ToString();
+            }
+            fr.Show();
         }
     }
 }
