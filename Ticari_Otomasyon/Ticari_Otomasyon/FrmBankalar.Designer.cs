@@ -41,8 +41,8 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
-            this.TxtFirma = new DevExpress.XtraEditors.TextEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.TxtHesapTuru = new DevExpress.XtraEditors.TextEdit();
             this.TxtYetkili = new DevExpress.XtraEditors.TextEdit();
@@ -63,7 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFirma.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtHesapTuru.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtYetkili.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSube.Properties)).BeginInit();
@@ -80,6 +80,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // gridControl1
             // 
@@ -101,6 +102,7 @@
             this.BtnTemizle.Size = new System.Drawing.Size(160, 31);
             this.BtnTemizle.TabIndex = 32;
             this.BtnTemizle.Text = "TEMİZLE";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // TxtIban
             // 
@@ -120,6 +122,7 @@
             this.BtnGuncelle.Size = new System.Drawing.Size(160, 31);
             this.BtnGuncelle.TabIndex = 23;
             this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnSil
             // 
@@ -131,6 +134,7 @@
             this.BtnSil.Size = new System.Drawing.Size(160, 31);
             this.BtnSil.TabIndex = 22;
             this.BtnSil.Text = "SİL";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // labelControl7
             // 
@@ -184,8 +188,8 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.lookUpEdit1);
             this.groupControl1.Controls.Add(this.BtnKaydet);
-            this.groupControl1.Controls.Add(this.TxtFirma);
             this.groupControl1.Controls.Add(this.labelControl12);
             this.groupControl1.Controls.Add(this.TxtHesapTuru);
             this.groupControl1.Controls.Add(this.TxtYetkili);
@@ -218,6 +222,18 @@
             this.groupControl1.TabIndex = 7;
             this.groupControl1.Text = "groupControl1";
             // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Location = new System.Drawing.Point(95, 328);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lookUpEdit1.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Properties.NullText = "Bir Firma Seçiniz";
+            this.lookUpEdit1.Size = new System.Drawing.Size(160, 24);
+            this.lookUpEdit1.TabIndex = 59;
+            // 
             // BtnKaydet
             // 
             this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -229,15 +245,6 @@
             this.BtnKaydet.TabIndex = 58;
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
-            // 
-            // TxtFirma
-            // 
-            this.TxtFirma.Location = new System.Drawing.Point(95, 328);
-            this.TxtFirma.Name = "TxtFirma";
-            this.TxtFirma.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtFirma.Properties.Appearance.Options.UseFont = true;
-            this.TxtFirma.Size = new System.Drawing.Size(160, 24);
-            this.TxtFirma.TabIndex = 57;
             // 
             // labelControl12
             // 
@@ -486,7 +493,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFirma.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtHesapTuru.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtYetkili.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSube.Properties)).EndInit();
@@ -519,7 +526,6 @@
         private DevExpress.XtraEditors.TextEdit Txtid;
         private DevExpress.XtraEditors.ComboBoxEdit Cmbil;
         private DevExpress.XtraEditors.SimpleButton BtnKaydet;
-        private DevExpress.XtraEditors.TextEdit TxtFirma;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.TextEdit TxtHesapTuru;
         private DevExpress.XtraEditors.TextEdit TxtYetkili;
@@ -529,5 +535,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private System.Windows.Forms.MaskedTextBox MskTelefon;
         private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
     }
 }

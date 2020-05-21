@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+
 namespace Ticari_Otomasyon
 {
     public partial class FrmFirmalar : Form
