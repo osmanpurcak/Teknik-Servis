@@ -72,22 +72,23 @@ namespace Ticari_Otomasyon
             komut.Parameters.AddWithValue("@p7", decimal.Parse(TxtSatis.Text));
             komut.Parameters.AddWithValue("@p8", RchDetay.Text);
             //parametrelerin konumlarını belirttim
-            komut.ExecuteNonQuery();
+            komut.ExecuteNonQueryAsync();
             bgl.baglanti().Close();
             MessageBox.Show("Ürün sisteme eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //Ürün eklenince ekrana gelmesini istediğim bir MessageBox ekledim
             listele();
 
         }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
+        private void BtnSil_Click(object sender, EventArgs e)
         {
             SqlCommand komutsil = new SqlCommand("Delete From Tbl_URUNLER where ID=@p1", bgl.baglanti());
             komutsil.Parameters.AddWithValue("@p1", Txtid.Text);
+            komutsil.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Ürün silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //Burada ürün silme bölümünü ekledim
             listele();
+        
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -104,6 +105,7 @@ namespace Ticari_Otomasyon
             TxtSatis.Text = dr["SATISFIYAT"].ToString();
             RchDetay.Text = dr["DETAY"].ToString();
         }
+        
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {

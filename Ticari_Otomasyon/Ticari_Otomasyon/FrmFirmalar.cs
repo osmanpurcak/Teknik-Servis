@@ -103,7 +103,7 @@ namespace Ticari_Otomasyon
             komut.Parameters.AddWithValue("@P13", TxtKod1.Text);
             komut.Parameters.AddWithValue("@P14", TxtKod2.Text);
             komut.Parameters.AddWithValue("@P15", TxtKod3.Text);
-            komut.ExecuteNonQueryAsync();
+            komut.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Firma Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             firmalistesi();
