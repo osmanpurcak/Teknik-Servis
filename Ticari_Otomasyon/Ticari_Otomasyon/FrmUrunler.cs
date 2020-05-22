@@ -83,7 +83,7 @@ namespace Ticari_Otomasyon
         {
             SqlCommand komutsil = new SqlCommand("Delete From Tbl_URUNLER where ID=@p1", bgl.baglanti());
             komutsil.Parameters.AddWithValue("@p1", Txtid.Text);
-            komutsil.ExecuteNonQuery();
+            komutsil.ExecuteNonQueryAsync();
             bgl.baglanti().Close();
             MessageBox.Show("Ürün silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //Burada ürün silme bölümünü ekledim
