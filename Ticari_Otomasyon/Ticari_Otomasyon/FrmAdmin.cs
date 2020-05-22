@@ -1,4 +1,16 @@
-﻿using System;
+﻿/****************************************************************************
+** SAKARYA ÜNİVERSİTESİ
+** BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
+** BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ BÖLÜMÜ
+** NESNEYE DAYALI PROGRAMLAMA DERSİ
+** 2019-2020 BAHAR DÖNEMİ
+**
+** ÖDEV NUMARASI..........: 2.Ödev
+** ÖĞRENCİ ADI............: Osman PURÇAK
+** ÖĞRENCİ NUMARASI.......: b191200373
+** DERSİN ALINDIĞI GRUP...: A 
+****************************************************************************/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,6 +59,11 @@ namespace Ticari_Otomasyon
                 MessageBox.Show("Hatalı Kulanıcı Adı ya da Şifre", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             bgl.baglanti().Close();
+        }
+
+        private void FrmAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
