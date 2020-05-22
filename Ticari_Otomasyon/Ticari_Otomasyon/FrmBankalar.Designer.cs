@@ -110,7 +110,7 @@
             this.TxtIban.Location = new System.Drawing.Point(95, 138);
             this.TxtIban.Name = "TxtIban";
             this.TxtIban.Size = new System.Drawing.Size(160, 26);
-            this.TxtIban.TabIndex = 24;
+            this.TxtIban.TabIndex = 4;
             // 
             // BtnGuncelle
             // 
@@ -232,7 +232,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit1.Properties.NullText = "Bir Firma Seçiniz";
             this.lookUpEdit1.Size = new System.Drawing.Size(160, 24);
-            this.lookUpEdit1.TabIndex = 59;
+            this.lookUpEdit1.TabIndex = 10;
             // 
             // BtnKaydet
             // 
@@ -263,7 +263,7 @@
             this.TxtHesapTuru.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtHesapTuru.Properties.Appearance.Options.UseFont = true;
             this.TxtHesapTuru.Size = new System.Drawing.Size(160, 24);
-            this.TxtHesapTuru.TabIndex = 55;
+            this.TxtHesapTuru.TabIndex = 9;
             // 
             // TxtYetkili
             // 
@@ -272,7 +272,7 @@
             this.TxtYetkili.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtYetkili.Properties.Appearance.Options.UseFont = true;
             this.TxtYetkili.Size = new System.Drawing.Size(160, 24);
-            this.TxtYetkili.TabIndex = 54;
+            this.TxtYetkili.TabIndex = 6;
             // 
             // labelControl11
             // 
@@ -301,7 +301,7 @@
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
             this.MskTarih.Size = new System.Drawing.Size(160, 26);
-            this.MskTarih.TabIndex = 50;
+            this.MskTarih.TabIndex = 8;
             this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl9
@@ -321,7 +321,7 @@
             this.MskTelefon.Mask = "(999) 000-0000";
             this.MskTelefon.Name = "MskTelefon";
             this.MskTelefon.Size = new System.Drawing.Size(160, 26);
-            this.MskTelefon.TabIndex = 48;
+            this.MskTelefon.TabIndex = 7;
             // 
             // labelControl8
             // 
@@ -346,7 +346,7 @@
             this.TxtHesapNo.Location = new System.Drawing.Point(95, 170);
             this.TxtHesapNo.Name = "TxtHesapNo";
             this.TxtHesapNo.Size = new System.Drawing.Size(160, 26);
-            this.TxtHesapNo.TabIndex = 43;
+            this.TxtHesapNo.TabIndex = 5;
             // 
             // labelControl3
             // 
@@ -365,7 +365,7 @@
             this.TxtSube.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSube.Properties.Appearance.Options.UseFont = true;
             this.TxtSube.Size = new System.Drawing.Size(160, 24);
-            this.TxtSube.TabIndex = 41;
+            this.TxtSube.TabIndex = 3;
             // 
             // TxtBankaAd
             // 
@@ -374,7 +374,7 @@
             this.TxtBankaAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtBankaAd.Properties.Appearance.Options.UseFont = true;
             this.TxtBankaAd.Size = new System.Drawing.Size(160, 24);
-            this.TxtBankaAd.TabIndex = 40;
+            this.TxtBankaAd.TabIndex = 1;
             // 
             // Txtid
             // 
@@ -383,7 +383,7 @@
             this.Txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Txtid.Properties.Appearance.Options.UseFont = true;
             this.Txtid.Size = new System.Drawing.Size(160, 24);
-            this.Txtid.TabIndex = 39;
+            this.Txtid.TabIndex = 100;
             // 
             // Cmbil
             // 
@@ -476,7 +476,8 @@
             "Yozgat",
             "Zonguldak"});
             this.Cmbil.Size = new System.Drawing.Size(160, 24);
-            this.Cmbil.TabIndex = 38;
+            this.Cmbil.TabIndex = 2;
+            this.Cmbil.SelectedIndexChanged += new System.EventHandler(this.Cmbil_SelectedIndexChanged);
             // 
             // FrmBankalar
             // 

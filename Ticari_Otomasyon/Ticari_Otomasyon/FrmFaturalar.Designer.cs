@@ -239,7 +239,7 @@
             this.TxtAlici.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtAlici.Properties.Appearance.Options.UseFont = true;
             this.TxtAlici.Size = new System.Drawing.Size(131, 24);
-            this.TxtAlici.TabIndex = 37;
+            this.TxtAlici.TabIndex = 6;
             // 
             // TxtTeslimAlan
             // 
@@ -248,7 +248,7 @@
             this.TxtTeslimAlan.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtTeslimAlan.Properties.Appearance.Options.UseFont = true;
             this.TxtTeslimAlan.Size = new System.Drawing.Size(131, 24);
-            this.TxtTeslimAlan.TabIndex = 36;
+            this.TxtTeslimAlan.TabIndex = 8;
             // 
             // TxtTeslimEden
             // 
@@ -257,7 +257,7 @@
             this.TxtTeslimEden.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtTeslimEden.Properties.Appearance.Options.UseFont = true;
             this.TxtTeslimEden.Size = new System.Drawing.Size(131, 24);
-            this.TxtTeslimEden.TabIndex = 35;
+            this.TxtTeslimEden.TabIndex = 7;
             // 
             // labelControl6
             // 
@@ -302,7 +302,7 @@
             this.TxtVergiDairesi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtVergiDairesi.Properties.Appearance.Options.UseFont = true;
             this.TxtVergiDairesi.Size = new System.Drawing.Size(131, 24);
-            this.TxtVergiDairesi.TabIndex = 8;
+            this.TxtVergiDairesi.TabIndex = 5;
             // 
             // MskSaat
             // 
@@ -311,7 +311,7 @@
             this.MskSaat.Mask = "00:00";
             this.MskSaat.Name = "MskSaat";
             this.MskSaat.Size = new System.Drawing.Size(131, 26);
-            this.MskSaat.TabIndex = 26;
+            this.MskSaat.TabIndex = 4;
             this.MskSaat.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl2
@@ -341,7 +341,7 @@
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
             this.MskTarih.Size = new System.Drawing.Size(131, 26);
-            this.MskTarih.TabIndex = 25;
+            this.MskTarih.TabIndex = 3;
             this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl17
@@ -376,7 +376,7 @@
             this.Txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Txtid.Properties.Appearance.Options.UseFont = true;
             this.Txtid.Size = new System.Drawing.Size(131, 24);
-            this.Txtid.TabIndex = 3;
+            this.Txtid.TabIndex = 100;
             // 
             // labelControl22
             // 
@@ -405,7 +405,7 @@
             this.TxtSeri.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSeri.Properties.Appearance.Options.UseFont = true;
             this.TxtSeri.Size = new System.Drawing.Size(131, 24);
-            this.TxtSeri.TabIndex = 5;
+            this.TxtSeri.TabIndex = 1;
             // 
             // TxtSiraNo
             // 
@@ -414,7 +414,7 @@
             this.TxtSiraNo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSiraNo.Properties.Appearance.Options.UseFont = true;
             this.TxtSiraNo.Size = new System.Drawing.Size(131, 24);
-            this.TxtSiraNo.TabIndex = 7;
+            this.TxtSiraNo.TabIndex = 2;
             // 
             // labelControl20
             // 
@@ -463,7 +463,7 @@
             this.TxtTutar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtTutar.Properties.Appearance.Options.UseFont = true;
             this.TxtTutar.Size = new System.Drawing.Size(140, 24);
-            this.TxtTutar.TabIndex = 44;
+            this.TxtTutar.TabIndex = 13;
             // 
             // labelControl9
             // 
@@ -482,7 +482,7 @@
             this.TxtFaturaid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtFaturaid.Properties.Appearance.Options.UseFont = true;
             this.TxtFaturaid.Size = new System.Drawing.Size(140, 24);
-            this.TxtFaturaid.TabIndex = 42;
+            this.TxtFaturaid.TabIndex = 14;
             // 
             // labelControl8
             // 
@@ -501,7 +501,7 @@
             this.TxtFiyat.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtFiyat.Properties.Appearance.Options.UseFont = true;
             this.TxtFiyat.Size = new System.Drawing.Size(140, 24);
-            this.TxtFiyat.TabIndex = 40;
+            this.TxtFiyat.TabIndex = 12;
             // 
             // TxtUrunid
             // 
@@ -510,7 +510,7 @@
             this.TxtUrunid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtUrunid.Properties.Appearance.Options.UseFont = true;
             this.TxtUrunid.Size = new System.Drawing.Size(140, 24);
-            this.TxtUrunid.TabIndex = 39;
+            this.TxtUrunid.TabIndex = 9;
             // 
             // labelControl7
             // 
@@ -529,7 +529,7 @@
             this.TxtUrunAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtUrunAd.Properties.Appearance.Options.UseFont = true;
             this.TxtUrunAd.Size = new System.Drawing.Size(140, 24);
-            this.TxtUrunAd.TabIndex = 37;
+            this.TxtUrunAd.TabIndex = 10;
             // 
             // labelControl5
             // 
@@ -570,7 +570,7 @@
             this.TxtMiktar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMiktar.Properties.Appearance.Options.UseFont = true;
             this.TxtMiktar.Size = new System.Drawing.Size(140, 24);
-            this.TxtMiktar.TabIndex = 29;
+            this.TxtMiktar.TabIndex = 11;
             // 
             // labelControl13
             // 

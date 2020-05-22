@@ -136,5 +136,10 @@ namespace Ticari_Otomasyon
             bgl.baglanti().Close();
             MessageBox.Show("Banka Bilgisi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        private void Cmbil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -42,7 +42,7 @@ namespace Ticari_Otomasyon
             MskTelefon2.Text = "";
             MskTelefon3.Text = "";
             MskYetkiliTC.Text = "";
-            RchAdres.Text = "";
+            Cmbil.Text = "";
             TxtAd.Focus();
         }
 
@@ -73,15 +73,14 @@ namespace Ticari_Otomasyon
                 MskTelefon3.Text = dr["TELEFON3"].ToString();
                 TxtMail.Text = dr["MAIL"].ToString();
                 MskFax.Text = dr["FAX"].ToString();
+                Cmbil.Text = dr["IL"].ToString();
                 TxtVergi.Text = dr["VERGIDAIRE"].ToString();
-                RchAdres.Text = dr["ADRES"].ToString();
             }
         }
 
-        
-        private void BtnKaydet_Click(object sender, EventArgs e)
+        private void BtnKaydet_Click_1(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand ("insert into TBL_FIRMALAR (AD,YETKILISTATU,YETKILIADSOYAD,YETKILITC,SEKTOR,TELEFON1,TELEFON2,TELEFON3,MAIL,FAX,VERGIDAIRE,ADRES) values (@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8,@P9,@P10,@P11,@P12)", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("insert into TBL_FIRMALAR (AD,YETKILISTATU,YETKILIADSOYAD,YETKILITC,SEKTOR,TELEFON1,TELEFON2,TELEFON3,MAIL,FAX,IL,VERGIDAIRE) values (@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8,@P9,@P10,@P11,@P12)", bgl.baglanti());
             komut.Parameters.AddWithValue("@P1", TxtAd.Text);
             komut.Parameters.AddWithValue("@P2", TxtYetkiliGorev.Text);
             komut.Parameters.AddWithValue("@P3", TxtYetkili.Text);
@@ -92,8 +91,8 @@ namespace Ticari_Otomasyon
             komut.Parameters.AddWithValue("@P8", MskTelefon3.Text);
             komut.Parameters.AddWithValue("@P9", TxtMail.Text);
             komut.Parameters.AddWithValue("@P10", MskFax.Text);
-            komut.Parameters.AddWithValue("@P11", TxtVergi.Text);
-            komut.Parameters.AddWithValue("@P12", RchAdres.Text);
+            komut.Parameters.AddWithValue("@P11", Cmbil.Text);
+            komut.Parameters.AddWithValue("@P12", TxtVergi.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Firma Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -101,7 +100,12 @@ namespace Ticari_Otomasyon
             temizle();
         }
 
-        private void BtnSil_Click(object sender, EventArgs e)
+        private void BtnTemizle_Click_1(object sender, EventArgs e)
+        {
+            temizle();
+        }
+
+        private void BtnSil_Click_1(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Delete From TBL_FIRMALAR where ID=@p1", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", Txtid.Text);
@@ -109,11 +113,6 @@ namespace Ticari_Otomasyon
             bgl.baglanti().Close();
             firmalistesi();
             MessageBox.Show("Firma Listeden Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-            temizle();
-        }
-
-        private void BtnTemizle_Click(object sender, EventArgs e)
-        {
             temizle();
         }
     }
