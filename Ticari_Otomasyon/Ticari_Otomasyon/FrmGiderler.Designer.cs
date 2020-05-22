@@ -194,6 +194,7 @@
             // 
             this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnTemizle.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnTemizle.ImageOptions.SvgImage")));
             this.BtnTemizle.Location = new System.Drawing.Point(74, 483);
             this.BtnTemizle.Name = "BtnTemizle";
@@ -384,8 +385,10 @@
             // 
             // FrmGiderler
             // 
+            this.AcceptButton = this.BtnKaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.BtnTemizle;
             this.ClientSize = new System.Drawing.Size(1370, 561);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);

@@ -21,3 +21,4 @@ C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Ot
 C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.FrmFaturaUrunDuzenleme.resources
 C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.FrmNotlar.resources
 C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.FrmNotDetay.resources
+C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.FrmHareketler.resources

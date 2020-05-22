@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Ticari_Otomasyon
 {
@@ -15,6 +16,37 @@ namespace Ticari_Otomasyon
         public FrmAdmin()
         {
             InitializeComponent();
+        }
+
+        sqlbaglantisi bgl = new sqlbaglantisi();
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            BtnGirisYap.BackColor = Color.AliceBlue;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            BtnGirisYap.BackColor = Color.White;
+        }
+
+        // admin giriş paneli
+        private void BtnGirisYap_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Select * From TBL_ADMIN where KullaniciAd=@p1 and sifre=@p2", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", TxtKullaniciAd.Text);
+            komut.Parameters.AddWithValue("@p2", TxtSifre.Text);
+            SqlDataReader dr=komut.ExecuteReader();
+            if (dr.Read())
+            {
+                FrmAnaModul fr = new FrmAnaModul();
+                fr.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Hatalı Kulanıcı Adı ya da Şifre", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            bgl.baglanti().Close();
         }
     }
 }

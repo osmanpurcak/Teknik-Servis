@@ -39,6 +39,11 @@ namespace Ticari_Otomasyon
             TxtAlici.Text = "";
             TxtTeslimEden.Text = "";
             TxtTeslimAlan.Text = "";
+            TxtUrunAd.Text = "";
+            TxtUrunid.Text = "";
+            TxtMiktar.Text = "";
+            TxtFiyat.Text = "";
+            TxtFaturaid.Text = "";
         }
         private void FrmFaturalar_Load(object sender, EventArgs e)
         {
@@ -81,6 +86,7 @@ namespace Ticari_Otomasyon
                 bgl.baglanti().Close();
                 MessageBox.Show("Fatura Bilgisi Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 listele();
+                temizle();
             }
             if (TxtFaturaid.Text !="")
             {
@@ -148,6 +154,11 @@ namespace Ticari_Otomasyon
                 fr.id = dr["FATURABILGIID"].ToString();
             }
             fr.Show();
+        }
+
+        private void BtnTemizle_Click_1(object sender, EventArgs e)
+        {
+            temizle();
         }
     }
 }

@@ -63,7 +63,6 @@ namespace Ticari_Otomasyon
             bgl.baglanti().Close();
             MessageBox.Show("Gider Tabloya Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             giderlistesi();
-            temizle();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
