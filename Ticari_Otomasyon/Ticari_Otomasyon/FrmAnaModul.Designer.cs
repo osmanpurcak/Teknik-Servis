@@ -327,6 +327,7 @@
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "TEKNİK SERVİS ";
             // 
             // ribbonPageGroup1
             // 
@@ -359,7 +360,7 @@
             this.IsMdiContainer = true;
             this.Name = "FrmAnaModul";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TEKNİK SERVİS";
+            this.Text = "TEKNİK SERVİS UYGULAMASI";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmAnaModul_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
