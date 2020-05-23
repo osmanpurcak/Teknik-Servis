@@ -46,6 +46,7 @@ namespace Ticari_Otomasyon
             if (fr14==null)
             {
                 fr14 = new FrmKasa();
+                fr14.ad = kullanici;
                 fr14.MdiParent = this;
                 fr14.Show();
 
@@ -131,10 +132,15 @@ namespace Ticari_Otomasyon
                 fr10.Show();
             }
         }
-
+        public string kullanici;
         private void FrmAnaModul_Load(object sender, EventArgs e)
         {
-
+            if (fr15 == null)
+            {
+                fr15 = new FrmAnaSayfa();
+                fr15.MdiParent = this;
+                fr15.Show();
+            }
         }
         FrmRaporlar fr11;
         private void Btn_Raporlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -163,6 +169,16 @@ namespace Ticari_Otomasyon
             {
                 fr13 = new FrmAyarlar();
                 fr13.Show();
+            }
+        }
+        FrmAnaSayfa fr15;
+        private void BtnAnaSayfa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr15==null)
+            {
+                fr15 = new FrmAnaSayfa();
+                fr15.MdiParent = this;
+                fr15.Show();
             }
         }
     }
