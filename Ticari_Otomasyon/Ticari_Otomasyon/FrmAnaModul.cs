@@ -39,11 +39,17 @@ namespace Ticari_Otomasyon
                 //fr'yi şu an çalıştığım MdiParent içerisinde açmasını istedim
             }
         }
-        
 
+        FrmKasa fr14;
         private void BtnKasa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            if (fr14==null)
+            {
+                fr14 = new FrmKasa();
+                fr14.MdiParent = this;
+                fr14.Show();
 
+            }
         }
         FrmFirmalar fr3;
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -27,3 +27,4 @@ C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Ot
 C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\RdlCompile.compiled
 C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.FrmStoklar.resources
 C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.FrmAyarlar.resources
+C:\Users\purcak\documents\visual studio 2013\Projects\Ticari_Otomasyon\Ticari_Otomasyon\obj\Debug\Ticari_Otomasyon.FrmKasa.resources

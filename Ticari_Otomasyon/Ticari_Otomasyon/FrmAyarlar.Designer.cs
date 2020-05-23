@@ -47,7 +47,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(511, 68);
+            this.gridControl1.Size = new System.Drawing.Size(511, 88);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -64,7 +64,7 @@
             // TxtKullaniciAd
             // 
             this.TxtKullaniciAd.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtKullaniciAd.Location = new System.Drawing.Point(82, 127);
+            this.TxtKullaniciAd.Location = new System.Drawing.Point(82, 146);
             this.TxtKullaniciAd.Name = "TxtKullaniciAd";
             this.TxtKullaniciAd.Size = new System.Drawing.Size(183, 26);
             this.TxtKullaniciAd.TabIndex = 4;
@@ -72,7 +72,7 @@
             // TxtSifre
             // 
             this.TxtSifre.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtSifre.Location = new System.Drawing.Point(82, 159);
+            this.TxtSifre.Location = new System.Drawing.Point(82, 178);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(183, 26);
             this.TxtSifre.TabIndex = 5;
@@ -80,7 +80,7 @@
             // simpleButton2
             // 
             this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.Location = new System.Drawing.Point(44, 127);
+            this.simpleButton2.Location = new System.Drawing.Point(44, 146);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(39, 26);
             this.simpleButton2.TabIndex = 7;
@@ -88,16 +88,17 @@
             // simpleButton3
             // 
             this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.Location = new System.Drawing.Point(44, 159);
+            this.simpleButton3.Location = new System.Drawing.Point(44, 178);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(39, 26);
             this.simpleButton3.TabIndex = 8;
             // 
             // Btnislem
             // 
-            this.Btnislem.BackColor = System.Drawing.Color.LawnGreen;
+            this.Btnislem.BackColor = System.Drawing.Color.Olive;
             this.Btnislem.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnislem.Location = new System.Drawing.Point(44, 191);
+            this.Btnislem.ForeColor = System.Drawing.Color.White;
+            this.Btnislem.Location = new System.Drawing.Point(44, 210);
             this.Btnislem.Name = "Btnislem";
             this.Btnislem.Size = new System.Drawing.Size(221, 34);
             this.Btnislem.TabIndex = 9;
@@ -108,7 +109,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(286, 101);
+            this.pictureBox1.Location = new System.Drawing.Point(286, 120);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 147);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
