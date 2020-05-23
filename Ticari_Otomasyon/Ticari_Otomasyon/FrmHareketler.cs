@@ -40,9 +40,19 @@ namespace Ticari_Otomasyon
             gridControl2.DataSource = dt;
         }
 
+        void MusteriHareketleri()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Exec MusteriHareketler", bgl.baglanti());
+            da.Fill(dt);
+            gridControl1.DataSource = dt;
+        }
+
         private void FrmHareketler_Load(object sender, EventArgs e)
         {
             FirmaHareketleri();
+
+            MusteriHareketleri();
         }
     }
 }
