@@ -59,7 +59,7 @@
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.Cmbil = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.Txtil = new DevExpress.XtraEditors.ComboBoxEdit();
             this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -81,7 +81,7 @@
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmbil.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Txtil.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -375,7 +375,7 @@
             // groupControl5
             // 
             this.groupControl5.Controls.Add(this.labelControl8);
-            this.groupControl5.Controls.Add(this.Cmbil);
+            this.groupControl5.Controls.Add(this.Txtil);
             this.groupControl5.Controls.Add(this.BtnTemizle);
             this.groupControl5.Controls.Add(this.BtnSil);
             this.groupControl5.Controls.Add(this.BtnKaydet);
@@ -392,104 +392,20 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(65, 99);
+            this.labelControl8.Location = new System.Drawing.Point(64, 99);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(13, 18);
             this.labelControl8.TabIndex = 114;
             this.labelControl8.Text = "İl:";
             // 
-            // Cmbil
+            // Txtil
             // 
-            this.Cmbil.Location = new System.Drawing.Point(84, 96);
-            this.Cmbil.Name = "Cmbil";
-            this.Cmbil.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Cmbil.Properties.Appearance.Options.UseFont = true;
-            this.Cmbil.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Cmbil.Properties.Items.AddRange(new object[] {
-            "Adana",
-            "Adıyaman",
-            "Afyonkarahisar",
-            "Ağrı",
-            "Aksaray",
-            "Amasya",
-            "Ankara",
-            "Antalya",
-            "Ardahan",
-            "Artvin",
-            "Aydın",
-            "Balıkesir",
-            "Bartın",
-            "Batman",
-            "Bayburt",
-            "Bilecik",
-            "Bingöl",
-            "Bitlis",
-            "Bolu",
-            "Burdur",
-            "Bursa",
-            "Çanakkale",
-            "Çankırı",
-            "Çorum",
-            "Denizli",
-            "Diyarbakır",
-            "Düzce",
-            "Edirne",
-            "Elazığ",
-            "Erzincan",
-            "Erzurum",
-            "Eskişehir",
-            "Gaziantep",
-            "Giresun",
-            "Gümüşhane",
-            "Hakkâri",
-            "Hatay",
-            "Iğdır",
-            "Isparta",
-            "İstanbul",
-            "İzmir",
-            "Kahramanmaraş",
-            "Karabük",
-            "Karaman",
-            "Kars",
-            "Kastamonu",
-            "Kayseri",
-            "Kilis",
-            "Kırıkkale",
-            "Kırklareli",
-            "Kırşehir",
-            "Kocaeli",
-            "Konya",
-            "Kütahya",
-            "Malatya",
-            "Manisa",
-            "Mardin",
-            "Mersin",
-            "Muğla",
-            "Muş",
-            "Nevşehir",
-            "Niğde",
-            "Ordu",
-            "Osmaniye",
-            "Rize",
-            "Sakarya",
-            "Samsun",
-            "Şanlıurfa",
-            "Siirt",
-            "Sinop",
-            "Sivas",
-            "Şırnak",
-            "Tekirdağ",
-            "Tokat",
-            "Trabzon",
-            "Tunceli",
-            "Uşak",
-            "Van",
-            "Yalova",
-            "Yozgat",
-            "Zonguldak"});
-            this.Cmbil.Size = new System.Drawing.Size(160, 24);
-            this.Cmbil.TabIndex = 11;
+            this.Txtil.Location = new System.Drawing.Point(84, 96);
+            this.Txtil.Name = "Txtil";
+            this.Txtil.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Txtil.Properties.Appearance.Options.UseFont = true;
+            this.Txtil.Size = new System.Drawing.Size(160, 24);
+            this.Txtil.TabIndex = 115;
             // 
             // BtnTemizle
             // 
@@ -574,7 +490,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
             this.groupControl5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmbil.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Txtil.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergi.Properties)).EndInit();
             this.ResumeLayout(false);
 
@@ -612,7 +528,7 @@
         private System.Windows.Forms.MaskedTextBox MskYetkiliTC;
         private DevExpress.XtraEditors.LabelControl labelControl17;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.ComboBoxEdit Cmbil;
+        private DevExpress.XtraEditors.ComboBoxEdit Txtil;
         private DevExpress.XtraEditors.SimpleButton BtnTemizle;
         private DevExpress.XtraEditors.SimpleButton BtnSil;
         private DevExpress.XtraEditors.SimpleButton BtnKaydet;

@@ -44,6 +44,7 @@ namespace Ticari_Otomasyon
         {
             TxtAd.Text = "";
             Txtid.Text = "";
+            Txtil.Text = "";
             TxtMail.Text = "";
             TxtSektor.Text = "";
             TxtVergi.Text = "";
@@ -54,7 +55,6 @@ namespace Ticari_Otomasyon
             MskTelefon2.Text = "";
             MskTelefon3.Text = "";
             MskYetkiliTC.Text = "";
-            Cmbil.Text = "";
             TxtAd.Focus();
         }
 
@@ -85,7 +85,7 @@ namespace Ticari_Otomasyon
                 MskTelefon3.Text = dr["TELEFON3"].ToString();
                 TxtMail.Text = dr["MAIL"].ToString();
                 MskFax.Text = dr["FAX"].ToString();
-                Cmbil.Text = dr["IL"].ToString();
+                Txtil.Text = dr["IL"].ToString();
                 TxtVergi.Text = dr["VERGIDAIRE"].ToString();
             }
         }
@@ -103,7 +103,7 @@ namespace Ticari_Otomasyon
             komut.Parameters.AddWithValue("@P8", MskTelefon3.Text);
             komut.Parameters.AddWithValue("@P9", TxtMail.Text);
             komut.Parameters.AddWithValue("@P10", MskFax.Text);
-            komut.Parameters.AddWithValue("@P11", Cmbil.Text);
+            komut.Parameters.AddWithValue("@P11", Txtil.Text);
             komut.Parameters.AddWithValue("@P12", TxtVergi.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();

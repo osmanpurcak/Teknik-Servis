@@ -209,6 +209,7 @@
             this.BtnAyarlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnAyarlar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnAyarlar.Name = "BtnAyarlar";
+            this.BtnAyarlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAyarlar_ItemClick);
             // 
             // barButtonItem1
             // 
@@ -223,6 +224,7 @@
             this.barButtonItem2.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.barButtonItem2.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // barButtonItem3
             // 
@@ -302,6 +304,7 @@
             this.Btn_Raporlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Btn_Raporlar.ItemAppearance.Normal.Options.UseFont = true;
             this.Btn_Raporlar.Name = "Btn_Raporlar";
+            this.Btn_Raporlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btn_Raporlar_ItemClick);
             // 
             // barButtonItem11
             // 
