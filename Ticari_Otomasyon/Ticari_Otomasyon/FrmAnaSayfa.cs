@@ -56,7 +56,7 @@ namespace Ticari_Otomasyon
 
         void haberler()
         {
-            XmlTextReader xmloku = new XmlTextReader("http://www.hurriyet.com.tr/rss/anasayfa");
+            XmlTextReader xmloku = new XmlTextReader("http://www.trt.net.tr/rss/gundem.rss");
             while (xmloku.Read())
             {
                 //title ları görünce listele
